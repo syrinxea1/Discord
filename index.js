@@ -26,7 +26,7 @@ client.on('ready', async () => {
     .setApplicationId('1201106199383375942')
     .setType('STREAMING')
     .setURL('https://www.youtube.com/watch?v=nGKFgidwsTM&list=RDnGKFgidwsTM&start_radio=1') //Must be a youtube video link 
-    .setState('Recording')
+    .setState('Valorant')
     .setName('maya')
     .setDetails(`Valorant [${formatTime()}]`)
     .setStartTimestamp(Date.now())
