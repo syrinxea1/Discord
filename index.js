@@ -23,22 +23,22 @@ client.on('ready', async () => {
   console.log(`${client.user.tag} - rich presence started!`);
 
   const r = new Discord.RichPresence()
-    .setApplicationId('')
+    .setApplicationId('1201106199383375942')
     .setType('STREAMING')
-    .setURL('https://www.youtube.com/watch?v=dQw4w9WgXcQ') //Must be a youtube video link 
-    .setState('Recording')
-    .setName('')
+    .setURL('https://www.youtube.com/watch?v=nGKFgidwsTM&list=RDnGKFgidwsTM&start_radio=1') //Must be a youtube video link 
+    .setState('Playing')
+    .setName('𝑝𝑟𝑒𝑚 𝑎𝑐𝑐𝑠 , 𝑛𝑖𝑡𝑟𝑜𝑠 & 𝑔𝑎𝑚𝑒 𝑐𝑟𝑒𝑑𝑠')
     .setDetails(`Valorant [${formatTime()}]`)
     .setStartTimestamp(Date.now())
- .setAssetsLargeImage('') //You can put links in tenor or discord and etc.
-    .setAssetsLargeText('Boring') //Text when you hover the Large image
-    .setAssetsSmallImage('') //You can put links in tenor or discord and etc.
-    .setAssetsSmallText('Twitch') //Text when you hover the Small image
-    .addButton('Watch', 'https://www.youtube.com/watch?v=dQw4w9WgXcQ')
-    .addButton('Donate', 'https://www.youtube.com/watch?v=dQw4w9WgXcQ');
+ .setAssetsLargeImage('https://cdn.discordapp.com/attachments/1201127101311492118/1202948321409372191/8279972121a6540ae1a22713b2ad4615.png?ex=65e1c4ed&is=65cf4fed&hm=bfe8fd7714ee1e539d0193714401a1a943f601404c9085c263652907ce332f73&') //You can put links in tenor or discord and etc.
+    .setAssetsLargeText('eporium') //Text when you hover the Large image
+    .setAssetsSmallImage('https://discord.com/channels/@me/1201127101311492118/1202948325037449327') //You can put links in tenor or discord and etc.
+    .setAssetsSmallText('legit shop') //Text when you hover the Small image
+    .addButton('⇢˗ˏˋShop࿐ྂ', 'https://discord.com/invite/eporium')
+    .addButton('⇢˗ˏVouches࿐ྂ', 'https://discord.gg/bG6PgpBA2P');
 
   client.user.setActivity(r);
-  client.user.setPresence({ status: "dnd" }); //dnd, online, idle, offline
+  client.user.setPresence({ status: "idle" }); //dnd, online, idle, offline
 
   let prevTime = null;
   setInterval(() => {
