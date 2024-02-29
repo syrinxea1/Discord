@@ -31,10 +31,10 @@ client.on('ready', async () => {
     .setDetails(`Valorant [${formatTime()}]`)
     .setStartTimestamp(Date.now())
  .setAssetsLargeImage('https://cdn.discordapp.com/attachments/1201099754583633971/1212550126531514420/7d9dd0378bf3a742bf6779c992663809.jpg?ex=65f23e4e&is=65dfc94e&hm=3c22017094ab00dc99318bc262a335971ccdb81e6db6f1ae1bbdb61ba22f9fff&') //You can put links in tenor or discord and etc.
-    .setAssetsLargeText('airis') //Text when you hover the Large image
+    .setAssetsLargeText('maya') //Text when you hover the Large image
     .setAssetsSmallImage('https://cdn.discordapp.com/emojis/1191505419764510801.gif?size=80&quality=lossless') //You can put links in tenor or discord and etc.
     .setAssetsSmallText('legit shop') //Text when you hover the Small image
-    .addButton( 'Shop', ' https://discord.gg/RpEWErbuKZ')
+ 
     
 
   client.user.setActivity(r);
@@ -44,7 +44,7 @@ client.on('ready', async () => {
   setInterval(() => {
     const newTime = formatTime();
     if (newTime !== prevTime) {
-      const newDetails = `airis`;
+      const newDetails = `Eporium`;
       r.setDetails(newDetails);
       client.user.setActivity(r);
       prevTime = newTime;
